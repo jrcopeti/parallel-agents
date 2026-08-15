@@ -1,0 +1,8 @@
+# This repo tracks only the shared Claude Code slash commands that live in this
+# parent folder. The projects inside it (bill-splitter, expense-tracker, ...) are
+# each their own repo and are deliberately not tracked here.
+/*
+!.gitignore
+!.claude/
+.claude/*
+!.claude/commands/
