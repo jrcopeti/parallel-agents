@@ -17,8 +17,9 @@ Example:
   subagent per worktree. Summaries land as <feature>.work.txt in expense-tracker/.
 
 Notes:
-  - Launch Claude Code from the PARENT folder of the repo (e.g. ~/code), which is
-    both where this project command lives and what the workflow below assumes.
+  - Launch Claude Code from the PARENT folder of the repo (e.g. ~/code) — that is
+    what the workflow below assumes. Where this command file itself lives does not
+    matter; install it user-level (~/.claude/commands/) so it is available there.
   - The first argument is the repo folder, relative to that parent folder.
   - Feature names should be single-token kebab-case: they become directory
     suffixes and branch names.

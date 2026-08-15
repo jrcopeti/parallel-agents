@@ -23,8 +23,9 @@ curl -o ~/.claude/commands/parallel-agents.md \
   https://raw.githubusercontent.com/jrcopeti/parallel-agents/main/.claude/commands/parallel-agents.md
 ```
 
-This repo keeps it in the `.claude/commands/` of the *parent* folder that holds several
-project repos, which is exactly where the workflow expects to be run from.
+The user-level install is the one to prefer: the workflow runs from the *parent* folder
+that holds your project repos, and a user-level command is available there without that
+parent having to be a Git repo itself.
 
 ## Usage
 
