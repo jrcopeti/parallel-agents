@@ -3,6 +3,7 @@
 # each their own repo and are deliberately not tracked here.
 /*
 !.gitignore
+!README.md
 !.claude/
 .claude/*
 !.claude/commands/
