@@ -30,12 +30,15 @@ Notes:
 
 I want to develop features in parallel using Git worktrees and subagents.
 
-Main repo folder: $1
-Full arguments: $ARGUMENTS
+Arguments: $ARGUMENTS
 
-The first argument is the main repo folder. Every argument after it is one feature to
-build in parallel. Call the repo folder's basename REPO (e.g. `expense-tracker`), and
-each remaining argument a FEATURE (kebab-case it if it isn't already).
+Split that argument string on whitespace. The FIRST token is the main repo folder — call
+its basename REPO (e.g. `expense-tracker`). EVERY token after it is one feature to build
+in parallel — call each one a FEATURE (kebab-case it if it isn't already). Parse the
+tokens yourself from the line above; do not rely on positional placeholders.
+
+State your parse back before doing anything else ("REPO = x; FEATURES = a, b"), so a
+mis-parse is caught before any worktree is created.
 
 You are in the parent folder of the main repo. You will need to change to the main repo
 folder to create the worktrees. If the first argument is missing, is not a directory, or
